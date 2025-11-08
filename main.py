@@ -42,7 +42,7 @@ DEFAULT_CONFIG = {
         "database": str(APP_DIR / "database.db")
     },
     "camera": {
-        "resolution": [1280, 720],
+        "resolution": [1920, 1080],
         "fps": 30,
         "buffer_size": 1
     },
@@ -50,7 +50,10 @@ DEFAULT_CONFIG = {
         "confidence_threshold": 0.75
     },
     "ui": {
-        "preview_size": [640, 480]
+        "preview_size": [960, 720],
+        "window_size": [1200, 850],
+        "fullscreen_preview": False,
+        "result_image_size": [450, 340]
     }
 }
 
