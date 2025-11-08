@@ -233,7 +233,7 @@ class HomePage(BasePage):
         # Version info
         ttk.Label(
             self,
-            text="Version 2.0 - Improved",
+            text="Version 1.1 - Improved",
             font=("Arial", 8),
             foreground="gray"
         ).pack(side="bottom", pady=10)
