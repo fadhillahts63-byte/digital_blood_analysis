@@ -993,46 +993,57 @@ class AnalysisPage(BasePage):
             font=("Arial", 16, "bold")
         ).pack(pady=15)
         
-        # Image comparison frame
+        # Image comparison frame - LARGER IMAGES
         image_frame = ttk.Frame(self)
         image_frame.pack(pady=10)
         
+        # Get result image size from config
+        result_width, result_height = config["ui"]["result_image_size"]
+        
         # Sample image
-        sample_frame = ttk.LabelFrame(image_frame, text="Sampel", padding=10)
+        sample_frame = ttk.LabelFrame(image_frame, text="📸 Sampel Anda", padding=10)
         sample_frame.grid(row=0, column=0, padx=10)
         
         self.sample_view = Label(
             sample_frame,
             text="(Sampel)",
-            bg="#e6e6e6",
-            width=35,
-            height=15
+            bg="#34495e",
+            fg="white",
+            width=int(result_width/8),
+            height=int(result_height/15),
+            font=("Arial", 10)
         )
         self.sample_view.pack()
         
         # Reference image
-        ref_frame = ttk.LabelFrame(image_frame, text="Referensi", padding=10)
+        ref_frame = ttk.LabelFrame(image_frame, text="🔬 Referensi Database", padding=10)
         ref_frame.grid(row=0, column=1, padx=10)
         
         self.match_view = Label(
             ref_frame,
             text="(Referensi)",
-            bg="#e6e6e6",
-            width=35,
-            height=15
+            bg="#34495e",
+            fg="white",
+            width=int(result_width/8),
+            height=int(result_height/15),
+            font=("Arial", 10)
         )
         self.match_view.pack()
         
-        # Result info
-        self.result_frame = ttk.LabelFrame(self, text="Informasi Diagnosis", padding=15)
-        self.result_frame.pack(pady=10, padx=20, fill="x")
+        # Result info - WIDER AND TALLER
+        self.result_frame = ttk.LabelFrame(self, text="📋 Informasi Diagnosis", padding=15)
+        self.result_frame.pack(pady=10, padx=20, fill="both", expand=True)
         
         self.result_text = tk.Text(
             self.result_frame,
-            height=8,
-            width=70,
+            height=10,
+            width=90,
             wrap="word",
-            font=("Arial", 10)
+            font=("Arial", 11),
+            relief="flat",
+            bg="#ecf0f1",
+            padx=10,
+            pady=10
         )
         self.result_text.pack(fill="both", expand=True)
         self.result_text.config(state="disabled")
@@ -1044,25 +1055,42 @@ class AnalysisPage(BasePage):
         self.analyze_btn = ttk.Button(
             btn_frame,
             text="🔬 Mulai Analisis",
-            command=self.run_analysis
+            command=self.run_analysis,
+            width=20
         )
         self.analyze_btn.grid(row=0, column=0, padx=5)
         
         ttk.Button(
             btn_frame,
             text="📸 Ambil Ulang",
-            command=lambda: controller.show_page(CapturePage)
+            command=lambda: self.controller.show_page(CapturePage),
+            width=20
         ).grid(row=0, column=1, padx=5)
         
         ttk.Button(
             btn_frame,
-            text="🏠 Kembali",
-            command=lambda: self.controller.show_page(HomePage)
+            text="🏠 Kembali ke Menu",
+            command=lambda: self.controller.show_page(HomePage),
+            width=20
         ).grid(row=0, column=2, padx=5)
         
-        # Status
-        status_label = ttk.Label(self, textvariable=self.status, font=("Arial", 10))
-        status_label.pack(pady=5)
+        # Status with better styling
+        status_frame = ttk.Frame(self)
+        status_frame.pack(pady=5, fill="x", padx=20)
+        
+        status_label = ttk.Label(
+            status_frame, 
+            textvariable=self.status, 
+            font=("Arial", 10, "bold")
+        )
+        status_label.pack()
+        
+        # Progress bar for analysis
+        self.analysis_progress = ttk.Progressbar(
+            status_frame,
+            mode='indeterminate',
+            length=400
+        )
     
     def on_show(self):
         """Load sample image when page is shown."""
