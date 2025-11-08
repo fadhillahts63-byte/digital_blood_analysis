@@ -12,3 +12,11 @@ camera:
   index: 0
   resolution: [1920, 1080]
   warmup_frames: 15
+  fps: 30
+  buffer_size: 1
+
+ui:
+  preview_size: [960, 720]
+  window_size: [1200, 850]
+  fullscreen_preview: false
+  result_image_size: [450, 340]
