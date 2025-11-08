@@ -787,9 +787,18 @@ class CapturePage(BasePage):
     
     def _on_camera_ready(self):
         """Called when camera is ready (runs in main thread)."""
+        # Hide progress bar
+        self.progress_bar.stop()
+        self.progress_bar.pack_forget()
+        
+        # Enable buttons
         self.capture_btn.config(state="normal")
+        self.fullscreen_btn.config(state="normal")
+        
+        # Update status with more details
+        device_name = getattr(self.controller, 'selected_device_name', 'Default')
         self.status_label.config(
-            text="✅ Kamera aktif - Siap mengambil gambar",
+            text=f"✅ Kamera aktif - Siap mengambil gambar | Resolution: {config['camera']['resolution'][0]}x{config['camera']['resolution'][1]}",
             foreground="green"
         )
         logger.info("Camera ready for capture")
