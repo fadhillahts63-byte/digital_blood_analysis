@@ -865,9 +865,19 @@ class CapturePage(BasePage):
     
     def _show_error(self, error_msg: str):
         """Show error on preview."""
-        self.preview_label.config(text=f"❌ {error_msg}")
-        self.status_label.config(text=f"Error: {error_msg}", foreground="red")
+        # Hide progress bar if showing
+        self.progress_bar.stop()
+        self.progress_bar.pack_forget()
+        
+        self.preview_label.config(
+            text=f"❌ ERROR\n\n{error_msg}\n\nCoba pilih kamera lain atau periksa koneksi",
+            bg="#e74c3c",
+            fg="white",
+            font=("Arial", 11, "bold")
+        )
+        self.status_label.config(text=f"❌ Error: {error_msg}", foreground="red")
         self.capture_btn.config(state="disabled")
+        self.fullscreen_btn.config(state="disabled")
         logger.error(f"Camera error: {error_msg}")
         
         # Offer recovery
