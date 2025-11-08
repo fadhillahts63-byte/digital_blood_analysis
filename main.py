@@ -551,6 +551,14 @@ class CapturePage(BasePage):
     
     def on_show(self):
         """Start camera when page is shown."""
+        # Update device info
+        device_name = getattr(self.controller, 'selected_device_name', 'Default Camera')
+        self.device_info_label.config(text=f"🎥 Device: {device_name}")
+        
+        # Reset fullscreen state
+        self.is_fullscreen = False
+        config["ui"]["current_preview_size"] = config["ui"]["preview_size"]
+        
         self.start_camera()
     
     def on_hide(self):
