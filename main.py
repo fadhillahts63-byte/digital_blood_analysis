@@ -908,7 +908,7 @@ class CapturePage(BasePage):
             return
         
         self.is_capturing = True
-        self.capture_btn.config(state="disabled")
+        self.capture_btn.config(state="disabled", text="⏳ Menyimpan...")
         
         try:
             # Get current frame (thread-safe)
@@ -921,34 +921,49 @@ class CapturePage(BasePage):
             cv2.imwrite(str(CAPTURE_PATH), frame)
             logger.info(f"Image captured and saved: {CAPTURE_PATH}")
             
-            # Show success and move to analysis
-            messagebox.showinfo(
-                "Sukses",
-                f"Gambar berhasil disimpan!{CAPTURE_PATH}"
+            # Flash effect for visual feedback
+            original_bg = self.preview_label.cget("bg")
+            self.preview_label.config(bg="white")
+            self.after(100, lambda: self.preview_label.config(bg=original_bg))
+            
+            # Show success
+            self.status_label.config(
+                text=f"✅ Gambar berhasil disimpan ke: {CAPTURE_PATH.name}",
+                foreground="green"
             )
             
-            self.status_label.config(
-                text="✅ Gambar berhasil diambil!",
-                foreground="green"
+            # Play a subtle audio cue if possible (optional)
+            self.bell()  # System beep
+            
+            # Show success dialog
+            messagebox.showinfo(
+                "✅ Berhasil",
+                f"Gambar berhasil disimpan!\n\n"
+                f"Lokasi: {CAPTURE_PATH}\n"
+                f"Ukuran: {frame.shape[1]}x{frame.shape[0]} pixels"
             )
             
             # Ask user what to do next
             response = messagebox.askyesno(
                 "Lanjutkan?",
-                "Gambar berhasil diambil! Lanjutkan ke analisis?"
+                "Gambar berhasil diambil!\n\nLanjutkan ke analisis?"
             )
             
             if response:
                 self.controller.show_page(AnalysisPage)
             else:
                 # Re-enable capture button
-                self.capture_btn.config(state="normal")
+                self.capture_btn.config(state="normal", text="📸 Ambil Gambar (Space)")
                 self.is_capturing = False
         
         except Exception as e:
             logger.error(f"Error capturing frame: {e}", exc_info=True)
-            messagebox.showerror("Error", f"Gagal menyimpan gambar:{e}")
-            self.capture_btn.config(state="normal")
+            messagebox.showerror(
+                "❌ Error", 
+                f"Gagal menyimpan gambar!\n\nDetail error:\n{str(e)}\n\nCoba lagi atau restart kamera."
+            )
+            self.capture_btn.config(state="normal", text="📸 Ambil Gambar (Space)")
+            self.status_label.config(text=f"❌ Error: {str(e)}", foreground="red")
             self.is_capturing = False
     
     def _go_back(self):
