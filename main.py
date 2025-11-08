@@ -571,15 +571,27 @@ class CapturePage(BasePage):
             logger.warning("Camera already running")
             return
         
+        # Show progress bar
+        self.progress_bar.pack(pady=5)
+        self.progress_bar.start(10)
+        
         # Get camera device
         device_name = getattr(self.controller, 'selected_device_name', None)
         device_index = getattr(self.controller, 'selected_device_index', 0)
         
         if device_name:
             logger.info(f"Starting camera: {device_name} (index {device_index})")
+            self.status_label.config(
+                text=f"⏳ Memulai kamera: {device_name}...",
+                foreground="blue"
+            )
         else:
             logger.info(f"Starting default camera (index {device_index})")
             device_index = 0
+            self.status_label.config(
+                text="⏳ Memulai kamera default...",
+                foreground="blue"
+            )
         
         self.running = True
         self.stop_event.clear()
