@@ -1,0 +1,14 @@
+# config.yaml
+paths:
+  capture_dir: "data/images/samples"
+  reference_dir: "data/images/references"
+  database: "data/db/blood_conditions.db"
+
+analysis:
+  confidence_threshold: 0.6
+  image_size: [400, 300]
+
+camera:
+  index: 0
+  resolution: [1920, 1080]
+  warmup_frames: 15

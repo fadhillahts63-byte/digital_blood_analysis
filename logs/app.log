@@ -1,0 +1,438 @@
+2025-11-08 14:09:46,459 - __main__ - INFO - load_config:71 - Configuration loaded successfully
+2025-11-08 14:09:46,462 - __main__ - INFO - <module>:136 - Application initialized
+2025-11-08 14:09:46,513 - comtypes - DEBUG - CoInitializeEx:149 - CoInitializeEx(None, 2)
+2025-11-08 14:09:46,811 - comtypes.client._code_cache - INFO - _create_comtypes_gen_package:102 - Imported existing <module 'comtypes.gen' from 'c:\\Users\\Warr0ck\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-08 14:09:46,812 - comtypes.client._code_cache - INFO - _find_gen_dir:83 - Using writeable comtypes cache directory: 'c:\Users\Warr0ck\AppData\Local\Programs\Python\Python312\Lib\site-packages\comtypes\gen'
+2025-11-08 14:09:46,832 - comtypes.client._generate - DEBUG - GetModule:109 - GetModule(qedit.dll), resolved: False
+2025-11-08 14:09:46,834 - comtypes.client._generate - DEBUG - GetModule:122 - GetModule(TLIBATTR(GUID={78530B68-61F9-11D2-8CAD-00A024580902}, Version=1.0, LCID=0, FLags=0x8))
+2025-11-08 14:09:46,882 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ITypeLib) ptr=0x1feab967d30 at 1feb3455550>
+2025-11-08 14:09:46,883 - comtypes.client._generate - DEBUG - GetModule:109 - GetModule(quartz.dll), resolved: False
+2025-11-08 14:09:46,884 - comtypes.client._generate - DEBUG - GetModule:122 - GetModule(TLIBATTR(GUID={56A868B0-0AD4-11CE-B03A-0020AF0BA770}, Version=1.0, LCID=0, FLags=0x8))
+2025-11-08 14:09:46,900 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ITypeLib) ptr=0x1fea945fea0 at 1feb34555d0>
+2025-11-08 14:09:47,042 - __main__ - INFO - <module>:149 - Core modules imported successfully
+2025-11-08 14:09:47,045 - __main__ - INFO - main:1215 - ============================================================
+2025-11-08 14:09:47,046 - __main__ - INFO - main:1216 - Digital Blood Analyzer v2.0 - Starting
+2025-11-08 14:09:47,047 - __main__ - INFO - main:1217 - ============================================================
+2025-11-08 14:09:47,350 - __main__ - DEBUG - __init__:168 - Initialized page: HomePage
+2025-11-08 14:09:48,140 - __main__ - DEBUG - _setup_ui:1165 - Created page: HomePage
+2025-11-08 14:09:48,142 - __main__ - DEBUG - __init__:168 - Initialized page: CameraSelectionPage
+2025-11-08 14:09:48,198 - __main__ - DEBUG - _setup_ui:1165 - Created page: CameraSelectionPage
+2025-11-08 14:09:48,199 - __main__ - DEBUG - __init__:168 - Initialized page: CapturePage
+2025-11-08 14:09:48,231 - __main__ - DEBUG - _setup_ui:1165 - Created page: CapturePage
+2025-11-08 14:09:48,231 - __main__ - DEBUG - __init__:168 - Initialized page: AnalysisPage
+2025-11-08 14:09:48,302 - __main__ - DEBUG - _setup_ui:1165 - Created page: AnalysisPage
+2025-11-08 14:09:48,302 - __main__ - DEBUG - __init__:168 - Initialized page: DatabasePage
+2025-11-08 14:09:48,399 - __main__ - DEBUG - _setup_ui:1165 - Created page: DatabasePage
+2025-11-08 14:09:48,401 - __main__ - INFO - show_page:1182 - Showing page: HomePage
+2025-11-08 14:09:48,402 - __main__ - INFO - __init__:1138 - Application started
+2025-11-08 14:09:51,164 - __main__ - INFO - _start_analysis:243 - User started analysis workflow
+2025-11-08 14:09:51,166 - __main__ - INFO - load_devices:319 - Loading camera devices...
+2025-11-08 14:09:51,205 - comtypes.client._create - DEBUG - CreateObject:88 - {E436EBB3-524F-11CE-9F53-0020AF0BA770} -> {E436EBB3-524F-11CE-9F53-0020AF0BA770}
+2025-11-08 14:09:51,205 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({E436EBB3-524F-11CE-9F53-0020AF0BA770}, clsctx=None, interface=<class 'comtypes.gen._78530B68_61F9_11D2_8CAD_00A024580902_0_1_0.IFilterGraph'>)
+2025-11-08 14:09:51,218 - comtypes.client._create - DEBUG - CreateObject:88 - {BF87B6E1-8C27-11d0-B3F0-00AA003761C5} -> {BF87B6E1-8C27-11D0-B3F0-00AA003761C5}
+2025-11-08 14:09:51,219 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({BF87B6E1-8C27-11D0-B3F0-00AA003761C5}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICaptureGraphBuilder2'>)
+2025-11-08 14:09:51,221 - comtypes.client._create - DEBUG - CreateObject:88 - {62BE5D10-60EB-11d0-BD3B-00A0C911CE86} -> {62BE5D10-60EB-11D0-BD3B-00A0C911CE86}
+2025-11-08 14:09:51,221 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({62BE5D10-60EB-11D0-BD3B-00A0C911CE86}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICreateDevEnum'>)
+2025-11-08 14:09:51,358 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1feb5507538 at 1feb46540d0>
+2025-11-08 14:09:51,359 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1feb5507538 at 1feb4654150>
+2025-11-08 14:09:51,359 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1feb5507530 at 1feb360ee50>
+2025-11-08 14:09:51,359 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1feb5507068 at 1feb360ee50>
+2025-11-08 14:09:51,360 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1feb5507068 at 1feb4654150>
+2025-11-08 14:09:51,361 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1feb5507060 at 1feb360fed0>
+2025-11-08 14:09:51,361 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1feb55074c8 at 1feb360fed0>
+2025-11-08 14:09:51,361 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1feb55074c8 at 1feb4654150>
+2025-11-08 14:09:51,362 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1feb55074c0 at 1feb360ee50>
+2025-11-08 14:09:51,362 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IEnumMoniker) ptr=0x1feb54b1c50 at 1feb360ff50>
+2025-11-08 14:09:51,363 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IFilterGraph) ptr=0x1feb5437260 at 1feb360edd0>
+2025-11-08 14:09:51,363 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IGraphBuilder) ptr=0x1feb5437260 at 1feb360ecd0>
+2025-11-08 14:09:51,363 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaControl) ptr=0x1feb5437838 at 1feb360eed0>
+2025-11-08 14:09:51,364 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaEvent) ptr=0x1feb5437870 at 1feb360ef50>
+2025-11-08 14:09:51,364 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICreateDevEnum) ptr=0x1feb5434960 at 1feb360f0d0>
+2025-11-08 14:09:51,364 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICaptureGraphBuilder2) ptr=0x1feb5436ec8 at 1feb360f050>
+2025-11-08 14:09:51,366 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfileManager2) ptr=0x1feb5439d40 at 1feb360efd0>
+2025-11-08 14:09:51,367 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f3350 at 1feb360fe50>
+2025-11-08 14:09:51,368 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f7400 at 1feb360fdd0>
+2025-11-08 14:09:51,368 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f48e0 at 1feb360fd50>
+2025-11-08 14:09:51,369 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f2f00 at 1feb360fcd0>
+2025-11-08 14:09:51,369 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f4490 at 1feb360fc50>
+2025-11-08 14:09:51,369 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f62c0 at 1feb360fbd0>
+2025-11-08 14:09:51,370 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54fa370 at 1feb360fb50>
+2025-11-08 14:09:51,370 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f5a20 at 1feb360fad0>
+2025-11-08 14:09:51,370 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f6fb0 at 1feb360fa50>
+2025-11-08 14:09:51,371 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f55d0 at 1feb360f5d0>
+2025-11-08 14:09:51,371 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f2ab0 at 1feb360f9d0>
+2025-11-08 14:09:51,371 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f4040 at 1feb360f950>
+2025-11-08 14:09:51,372 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f37a0 at 1feb360f8d0>
+2025-11-08 14:09:51,372 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f8990 at 1feb360f850>
+2025-11-08 14:09:51,372 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f6b60 at 1feb360f7d0>
+2025-11-08 14:09:51,373 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f9f20 at 1feb360f750>
+2025-11-08 14:09:51,373 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f9ad0 at 1feb360f6d0>
+2025-11-08 14:09:51,374 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f9230 at 1feb360f650>
+2025-11-08 14:09:51,374 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f8540 at 1feb360f550>
+2025-11-08 14:09:51,374 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f8de0 at 1feb360f4d0>
+2025-11-08 14:09:51,375 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f5180 at 1feb360f450>
+2025-11-08 14:09:51,375 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54f9680 at 1feb360f3d0>
+2025-11-08 14:09:51,376 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54cb540 at 1feb360f350>
+2025-11-08 14:09:51,376 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54cb0f0 at 1feb360f2d0>
+2025-11-08 14:09:51,377 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54cdc10 at 1feb360f250>
+2025-11-08 14:09:51,378 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54cc230 at 1feb360f1d0>
+2025-11-08 14:09:51,378 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1feb54cc680 at 1feb360f150>
+2025-11-08 14:09:51,389 - __main__ - INFO - load_devices:350 - Found 3 cameras: ['Integrated Camera', 'USB 2.0 PC Cam', 'OBS Virtual Camera']
+2025-11-08 14:09:51,390 - __main__ - INFO - show_page:1182 - Showing page: CameraSelectionPage
+2025-11-08 14:09:55,948 - __main__ - INFO - use_selected:391 - User selected camera: USB 2.0 PC Cam
+2025-11-08 14:09:55,951 - __main__ - INFO - start_camera:490 - Starting camera: USB 2.0 PC Cam (index 1)
+2025-11-08 14:09:55,953 - __main__ - INFO - _camera_worker:538 - Camera worker started for index 1
+2025-11-08 14:09:55,954 - __main__ - INFO - show_page:1182 - Showing page: CapturePage
+2025-11-08 14:09:56,273 - __main__ - INFO - _camera_worker:549 - Opening camera attempt 1/3...
+2025-11-08 14:09:57,688 - __main__ - INFO - _camera_worker:564 - ✅ Camera 1 opened successfully
+2025-11-08 14:09:58,289 - __main__ - INFO - _camera_worker:588 - Camera configured: 1920x1080
+2025-11-08 14:09:58,290 - __main__ - INFO - _camera_worker:603 - Camera streaming started
+2025-11-08 14:09:58,292 - __main__ - INFO - _on_camera_ready:691 - Camera ready for capture
+2025-11-08 14:14:51,153 - __main__ - INFO - load_config:71 - Configuration loaded successfully
+2025-11-08 14:14:51,154 - __main__ - INFO - <module>:136 - Application initialized
+2025-11-08 14:14:51,179 - comtypes - DEBUG - CoInitializeEx:149 - CoInitializeEx(None, 2)
+2025-11-08 14:14:51,348 - comtypes.client._code_cache - INFO - _create_comtypes_gen_package:102 - Imported existing <module 'comtypes.gen' from 'c:\\Users\\Warr0ck\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-11-08 14:14:51,349 - comtypes.client._code_cache - INFO - _find_gen_dir:83 - Using writeable comtypes cache directory: 'c:\Users\Warr0ck\AppData\Local\Programs\Python\Python312\Lib\site-packages\comtypes\gen'
+2025-11-08 14:14:51,365 - comtypes.client._generate - DEBUG - GetModule:109 - GetModule(qedit.dll), resolved: False
+2025-11-08 14:14:51,369 - comtypes.client._generate - DEBUG - GetModule:122 - GetModule(TLIBATTR(GUID={78530B68-61F9-11D2-8CAD-00A024580902}, Version=1.0, LCID=0, FLags=0x8))
+2025-11-08 14:14:51,416 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ITypeLib) ptr=0x1ed660f08a0 at 1ed6dcd5550>
+2025-11-08 14:14:51,417 - comtypes.client._generate - DEBUG - GetModule:109 - GetModule(quartz.dll), resolved: False
+2025-11-08 14:14:51,418 - comtypes.client._generate - DEBUG - GetModule:122 - GetModule(TLIBATTR(GUID={56A868B0-0AD4-11CE-B03A-0020AF0BA770}, Version=1.0, LCID=0, FLags=0x8))
+2025-11-08 14:14:51,430 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ITypeLib) ptr=0x1ed63c2fdc0 at 1ed6dcd55d0>
+2025-11-08 14:14:51,479 - __main__ - INFO - <module>:149 - Core modules imported successfully
+2025-11-08 14:14:51,480 - __main__ - INFO - main:1218 - ============================================================
+2025-11-08 14:14:51,481 - __main__ - INFO - main:1219 - Digital Blood Analyzer v2.0 - Starting
+2025-11-08 14:14:51,482 - __main__ - INFO - main:1220 - ============================================================
+2025-11-08 14:14:51,621 - __main__ - DEBUG - __init__:168 - Initialized page: HomePage
+2025-11-08 14:14:52,033 - __main__ - DEBUG - _setup_ui:1168 - Created page: HomePage
+2025-11-08 14:14:52,034 - __main__ - DEBUG - __init__:168 - Initialized page: CameraSelectionPage
+2025-11-08 14:14:52,116 - __main__ - DEBUG - _setup_ui:1168 - Created page: CameraSelectionPage
+2025-11-08 14:14:52,117 - __main__ - DEBUG - __init__:168 - Initialized page: CapturePage
+2025-11-08 14:14:52,151 - __main__ - DEBUG - _setup_ui:1168 - Created page: CapturePage
+2025-11-08 14:14:52,152 - __main__ - DEBUG - __init__:168 - Initialized page: AnalysisPage
+2025-11-08 14:14:52,202 - __main__ - DEBUG - _setup_ui:1168 - Created page: AnalysisPage
+2025-11-08 14:14:52,203 - __main__ - DEBUG - __init__:168 - Initialized page: DatabasePage
+2025-11-08 14:14:52,266 - __main__ - DEBUG - _setup_ui:1168 - Created page: DatabasePage
+2025-11-08 14:14:52,267 - __main__ - INFO - show_page:1185 - Showing page: HomePage
+2025-11-08 14:14:52,267 - __main__ - INFO - __init__:1141 - Application started
+2025-11-08 14:14:57,460 - __main__ - INFO - _start_analysis:243 - User started analysis workflow
+2025-11-08 14:14:57,461 - __main__ - INFO - load_devices:319 - Loading camera devices...
+2025-11-08 14:14:57,502 - comtypes.client._create - DEBUG - CreateObject:88 - {E436EBB3-524F-11CE-9F53-0020AF0BA770} -> {E436EBB3-524F-11CE-9F53-0020AF0BA770}
+2025-11-08 14:14:57,502 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({E436EBB3-524F-11CE-9F53-0020AF0BA770}, clsctx=None, interface=<class 'comtypes.gen._78530B68_61F9_11D2_8CAD_00A024580902_0_1_0.IFilterGraph'>)
+2025-11-08 14:14:57,512 - comtypes.client._create - DEBUG - CreateObject:88 - {BF87B6E1-8C27-11d0-B3F0-00AA003761C5} -> {BF87B6E1-8C27-11D0-B3F0-00AA003761C5}
+2025-11-08 14:14:57,512 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({BF87B6E1-8C27-11D0-B3F0-00AA003761C5}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICaptureGraphBuilder2'>)
+2025-11-08 14:14:57,514 - comtypes.client._create - DEBUG - CreateObject:88 - {62BE5D10-60EB-11d0-BD3B-00A0C911CE86} -> {62BE5D10-60EB-11D0-BD3B-00A0C911CE86}
+2025-11-08 14:14:57,514 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({62BE5D10-60EB-11D0-BD3B-00A0C911CE86}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICreateDevEnum'>)
+2025-11-08 14:14:57,656 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd87228 at 1ed6eebc250>
+2025-11-08 14:14:57,658 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd87228 at 1ed6eebc2d0>
+2025-11-08 14:14:57,659 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd87220 at 1ed6de8efd0>
+2025-11-08 14:14:57,660 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd87298 at 1ed6de8efd0>
+2025-11-08 14:14:57,661 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd87298 at 1ed6eebc250>
+2025-11-08 14:14:57,662 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd87290 at 1ed6eebc2d0>
+2025-11-08 14:14:57,662 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd87068 at 1ed6eebc2d0>
+2025-11-08 14:14:57,664 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd87068 at 1ed6eebc250>
+2025-11-08 14:14:57,664 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd87060 at 1ed6de8efd0>
+2025-11-08 14:14:57,665 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IEnumMoniker) ptr=0x1ed6fd31c50 at 1ed6eebc150>
+2025-11-08 14:14:57,666 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IFilterGraph) ptr=0x1ed6fcb7260 at 1ed6de8ef50>
+2025-11-08 14:14:57,666 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IGraphBuilder) ptr=0x1ed6fcb7260 at 1ed6de8ee50>
+2025-11-08 14:14:57,668 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaControl) ptr=0x1ed6fcb7838 at 1ed6de8f050>
+2025-11-08 14:14:57,669 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaEvent) ptr=0x1ed6fcb7870 at 1ed6de8f0d0>
+2025-11-08 14:14:57,669 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICreateDevEnum) ptr=0x1ed6fcb4480 at 1ed6de8f250>
+2025-11-08 14:14:57,669 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICaptureGraphBuilder2) ptr=0x1ed6fcb6ec8 at 1ed6de8f1d0>
+2025-11-08 14:14:57,672 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfileManager2) ptr=0x1ed6fcb9d40 at 1ed6de8f150>
+2025-11-08 14:14:57,673 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd76fb0 at 1ed6eebc050>
+2025-11-08 14:14:57,673 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd72ab0 at 1ed6de8ff50>
+2025-11-08 14:14:57,674 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd76b60 at 1ed6de8fed0>
+2025-11-08 14:14:57,674 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd76710 at 1ed6de8fe50>
+2025-11-08 14:14:57,674 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd75a20 at 1ed6de8fdd0>
+2025-11-08 14:14:57,675 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd79230 at 1ed6de8fd50>
+2025-11-08 14:14:57,676 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd75e70 at 1ed6de8fcd0>
+2025-11-08 14:14:57,677 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd755d0 at 1ed6de8fc50>
+2025-11-08 14:14:57,677 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd78990 at 1ed6de8fbd0>
+2025-11-08 14:14:57,678 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd762c0 at 1ed6de8f750>
+2025-11-08 14:14:57,678 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd7a370 at 1ed6de8fb50>
+2025-11-08 14:14:57,678 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd75180 at 1ed6de8fad0>
+2025-11-08 14:14:57,679 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd74d30 at 1ed6de8fa50>
+2025-11-08 14:14:57,679 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd73350 at 1ed6de8f9d0>
+2025-11-08 14:14:57,679 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd79f20 at 1ed6de8f950>
+2025-11-08 14:14:57,681 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd77850 at 1ed6de8f8d0>
+2025-11-08 14:14:57,681 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd74040 at 1ed6de8f850>
+2025-11-08 14:14:57,682 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd78de0 at 1ed6de8f7d0>
+2025-11-08 14:14:57,682 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd748e0 at 1ed6de8f6d0>
+2025-11-08 14:14:57,683 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd79ad0 at 1ed6de8f650>
+2025-11-08 14:14:57,683 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd73bf0 at 1ed6de8f5d0>
+2025-11-08 14:14:57,684 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd737a0 at 1ed6de8f550>
+2025-11-08 14:14:57,684 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd4d370 at 1ed6de8f4d0>
+2025-11-08 14:14:57,686 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd4cf20 at 1ed6de8f450>
+2025-11-08 14:14:57,686 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd4b0f0 at 1ed6de8f3d0>
+2025-11-08 14:14:57,687 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd4cad0 at 1ed6de8f350>
+2025-11-08 14:14:57,687 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd4a400 at 1ed6de8f2d0>
+2025-11-08 14:14:57,708 - __main__ - INFO - load_devices:350 - Found 3 cameras: ['Integrated Camera', 'USB 2.0 PC Cam', 'OBS Virtual Camera']
+2025-11-08 14:14:57,709 - __main__ - INFO - show_page:1185 - Showing page: CameraSelectionPage
+2025-11-08 14:15:04,412 - __main__ - INFO - use_selected:391 - User selected camera: USB 2.0 PC Cam
+2025-11-08 14:15:04,414 - __main__ - INFO - start_camera:490 - Starting camera: USB 2.0 PC Cam (index 1)
+2025-11-08 14:15:04,416 - __main__ - INFO - _camera_worker:538 - Camera worker started for index 1
+2025-11-08 14:15:04,416 - __main__ - INFO - show_page:1185 - Showing page: CapturePage
+2025-11-08 14:15:04,726 - __main__ - INFO - _camera_worker:549 - Opening camera attempt 1/3...
+2025-11-08 14:15:06,144 - __main__ - INFO - _camera_worker:564 - ✅ Camera 1 opened successfully
+2025-11-08 14:15:06,771 - __main__ - INFO - _camera_worker:588 - Camera configured: 1920x1080
+2025-11-08 14:15:06,771 - __main__ - INFO - _camera_worker:603 - Camera streaming started
+2025-11-08 14:15:06,772 - __main__ - INFO - _on_camera_ready:694 - Camera ready for capture
+2025-11-08 14:15:36,532 - __main__ - INFO - stop_camera:510 - Stopping camera...
+2025-11-08 14:15:36,604 - __main__ - INFO - _camera_worker:664 - Camera worker finished (captured 185 frames)
+2025-11-08 14:15:36,613 - __main__ - INFO - _camera_worker:673 - Cleaning up camera resources...
+2025-11-08 14:15:37,246 - __main__ - INFO - _camera_worker:685 - Camera worker cleanup complete
+2025-11-08 14:15:37,257 - __main__ - INFO - stop_camera:534 - Camera stopped successfully
+2025-11-08 14:15:37,305 - __main__ - INFO - load_devices:319 - Loading camera devices...
+2025-11-08 14:15:37,378 - comtypes.client._create - DEBUG - CreateObject:88 - {E436EBB3-524F-11CE-9F53-0020AF0BA770} -> {E436EBB3-524F-11CE-9F53-0020AF0BA770}
+2025-11-08 14:15:37,379 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({E436EBB3-524F-11CE-9F53-0020AF0BA770}, clsctx=None, interface=<class 'comtypes.gen._78530B68_61F9_11D2_8CAD_00A024580902_0_1_0.IFilterGraph'>)
+2025-11-08 14:15:37,387 - comtypes.client._create - DEBUG - CreateObject:88 - {BF87B6E1-8C27-11d0-B3F0-00AA003761C5} -> {BF87B6E1-8C27-11D0-B3F0-00AA003761C5}
+2025-11-08 14:15:37,388 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({BF87B6E1-8C27-11D0-B3F0-00AA003761C5}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICaptureGraphBuilder2'>)
+2025-11-08 14:15:37,389 - comtypes.client._create - DEBUG - CreateObject:88 - {62BE5D10-60EB-11d0-BD3B-00A0C911CE86} -> {62BE5D10-60EB-11D0-BD3B-00A0C911CE86}
+2025-11-08 14:15:37,390 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({62BE5D10-60EB-11D0-BD3B-00A0C911CE86}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICreateDevEnum'>)
+2025-11-08 14:15:37,527 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd874c8 at 1ed6eebc450>
+2025-11-08 14:15:37,528 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd874c8 at 1ed6eebc4d0>
+2025-11-08 14:15:37,529 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd874c0 at 1ed6eebc2d0>
+2025-11-08 14:15:37,529 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd873e8 at 1ed6eebc2d0>
+2025-11-08 14:15:37,529 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd873e8 at 1ed6eebc4d0>
+2025-11-08 14:15:37,529 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd873e0 at 1ed65f8c0d0>
+2025-11-08 14:15:37,530 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd87538 at 1ed65f8c0d0>
+2025-11-08 14:15:37,530 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd87538 at 1ed6eebc2d0>
+2025-11-08 14:15:37,530 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd87530 at 1ed6eebc4d0>
+2025-11-08 14:15:37,531 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IEnumMoniker) ptr=0x1ed6fd534b0 at 1ed6eebc0d0>
+2025-11-08 14:15:37,531 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IFilterGraph) ptr=0x1ed6fcb6b50 at 1ed6de8f2d0>
+2025-11-08 14:15:37,531 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IGraphBuilder) ptr=0x1ed6fcb6b50 at 1ed65ef73d0>
+2025-11-08 14:15:37,531 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaControl) ptr=0x1ed6fd4e678 at 1ed6de8e950>
+2025-11-08 14:15:37,532 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaEvent) ptr=0x1ed6fd4e6b0 at 1ed6de8edd0>
+2025-11-08 14:15:37,532 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICreateDevEnum) ptr=0x1ed6fcb43c0 at 1ed6de8f850>
+2025-11-08 14:15:37,532 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICaptureGraphBuilder2) ptr=0x1ed6fdae788 at 1ed6de8f7d0>
+2025-11-08 14:15:37,534 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfileManager2) ptr=0x1ed6fcb6600 at 1ed6de8f350>
+2025-11-08 14:15:37,534 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9ee40 at 1ed6eebc150>
+2025-11-08 14:15:37,536 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9c770 at 1ed6eebc250>
+2025-11-08 14:15:37,536 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9f290 at 1ed6eebc050>
+2025-11-08 14:15:37,536 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9dd00 at 1ed6eebc1d0>
+2025-11-08 14:15:37,536 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9fb30 at 1ed6de8efd0>
+2025-11-08 14:15:37,537 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9d460 at 1ed6de8ef50>
+2025-11-08 14:15:37,537 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9e150 at 1ed6de8ee50>
+2025-11-08 14:15:37,538 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9f6e0 at 1ed6de8f050>
+2025-11-08 14:15:37,538 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9ba80 at 1ed6de8f250>
+2025-11-08 14:15:37,539 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9e5a0 at 1ed6de8fcd0>
+2025-11-08 14:15:37,539 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1d160 at 1ed6de8f0d0>
+2025-11-08 14:15:37,539 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1cd10 at 1ed6de8f1d0>
+2025-11-08 14:15:37,540 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c8c0 at 1ed6de8f150>
+2025-11-08 14:15:37,540 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c470 at 1ed6de8ff50>
+2025-11-08 14:15:37,540 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c020 at 1ed6de8fed0>
+2025-11-08 14:15:37,540 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1b780 at 1ed6de8fe50>
+2025-11-08 14:15:37,541 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd22350 at 1ed6de8fdd0>
+2025-11-08 14:15:37,541 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd21f00 at 1ed6de8fd50>
+2025-11-08 14:15:37,541 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd20dc0 at 1ed6de8fc50>
+2025-11-08 14:15:37,541 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd20970 at 1ed6de8fbd0>
+2025-11-08 14:15:37,542 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1f3e0 at 1ed6de8f750>
+2025-11-08 14:15:37,542 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1ef90 at 1ed6de8fb50>
+2025-11-08 14:15:37,542 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd20520 at 1ed6de8fad0>
+2025-11-08 14:15:37,543 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1b330 at 1ed6de8fa50>
+2025-11-08 14:15:37,543 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd200d0 at 1ed6de8f9d0>
+2025-11-08 14:15:37,544 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1aee0 at 1ed6de8f950>
+2025-11-08 14:15:37,544 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1eb40 at 1ed6de8f8d0>
+2025-11-08 14:15:37,545 - __main__ - INFO - load_devices:350 - Found 3 cameras: ['Integrated Camera', 'USB 2.0 PC Cam', 'OBS Virtual Camera']
+2025-11-08 14:15:37,545 - __main__ - INFO - show_page:1185 - Showing page: CameraSelectionPage
+2025-11-08 14:15:55,980 - __main__ - INFO - use_selected:391 - User selected camera: USB 2.0 PC Cam
+2025-11-08 14:15:55,981 - __main__ - INFO - start_camera:490 - Starting camera: USB 2.0 PC Cam (index 1)
+2025-11-08 14:15:55,982 - __main__ - INFO - _camera_worker:538 - Camera worker started for index 1
+2025-11-08 14:15:55,998 - __main__ - INFO - show_page:1185 - Showing page: CapturePage
+2025-11-08 14:15:56,289 - __main__ - INFO - _camera_worker:549 - Opening camera attempt 1/3...
+2025-11-08 14:15:57,681 - __main__ - INFO - _camera_worker:564 - ✅ Camera 1 opened successfully
+2025-11-08 14:15:58,399 - __main__ - INFO - _camera_worker:588 - Camera configured: 1920x1080
+2025-11-08 14:15:58,403 - __main__ - INFO - _camera_worker:603 - Camera streaming started
+2025-11-08 14:15:58,404 - __main__ - INFO - _on_camera_ready:694 - Camera ready for capture
+2025-11-08 14:16:06,891 - __main__ - INFO - stop_camera:510 - Stopping camera...
+2025-11-08 14:16:07,052 - __main__ - INFO - _camera_worker:664 - Camera worker finished (captured 47 frames)
+2025-11-08 14:16:07,107 - __main__ - INFO - _camera_worker:673 - Cleaning up camera resources...
+2025-11-08 14:16:07,721 - __main__ - INFO - _camera_worker:685 - Camera worker cleanup complete
+2025-11-08 14:16:07,730 - __main__ - INFO - stop_camera:534 - Camera stopped successfully
+2025-11-08 14:16:07,767 - __main__ - INFO - load_devices:319 - Loading camera devices...
+2025-11-08 14:16:07,832 - comtypes.client._create - DEBUG - CreateObject:88 - {E436EBB3-524F-11CE-9F53-0020AF0BA770} -> {E436EBB3-524F-11CE-9F53-0020AF0BA770}
+2025-11-08 14:16:07,833 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({E436EBB3-524F-11CE-9F53-0020AF0BA770}, clsctx=None, interface=<class 'comtypes.gen._78530B68_61F9_11D2_8CAD_00A024580902_0_1_0.IFilterGraph'>)
+2025-11-08 14:16:07,843 - comtypes.client._create - DEBUG - CreateObject:88 - {BF87B6E1-8C27-11d0-B3F0-00AA003761C5} -> {BF87B6E1-8C27-11D0-B3F0-00AA003761C5}
+2025-11-08 14:16:07,843 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({BF87B6E1-8C27-11D0-B3F0-00AA003761C5}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICaptureGraphBuilder2'>)
+2025-11-08 14:16:07,845 - comtypes.client._create - DEBUG - CreateObject:88 - {62BE5D10-60EB-11d0-BD3B-00A0C911CE86} -> {62BE5D10-60EB-11D0-BD3B-00A0C911CE86}
+2025-11-08 14:16:07,845 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({62BE5D10-60EB-11D0-BD3B-00A0C911CE86}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICreateDevEnum'>)
+2025-11-08 14:16:07,982 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd460c8 at 1ed6eebc0d0>
+2025-11-08 14:16:07,983 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd460c8 at 1ed6eebc4d0>
+2025-11-08 14:16:07,983 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd460c0 at 1ed6eebc050>
+2025-11-08 14:16:07,984 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd461a8 at 1ed6eebc050>
+2025-11-08 14:16:07,985 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd461a8 at 1ed6eebc4d0>
+2025-11-08 14:16:07,985 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd461a0 at 1ed6de8f6d0>
+2025-11-08 14:16:07,986 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd462f8 at 1ed6de8f6d0>
+2025-11-08 14:16:07,986 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd462f8 at 1ed6eebc050>
+2025-11-08 14:16:07,986 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd462f0 at 1ed6eebc4d0>
+2025-11-08 14:16:07,987 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IEnumMoniker) ptr=0x1ed6fdab680 at 1ed6eebc250>
+2025-11-08 14:16:07,987 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IFilterGraph) ptr=0x1ed6fcb6b50 at 1ed6de8f950>
+2025-11-08 14:16:07,987 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IGraphBuilder) ptr=0x1ed6fcb6b50 at 1ed6de8eed0>
+2025-11-08 14:16:07,989 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaControl) ptr=0x1ed6fd45648 at 1ed6de8eb50>
+2025-11-08 14:16:07,989 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaEvent) ptr=0x1ed6fd45680 at 1ed6de8f650>
+2025-11-08 14:16:07,989 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICreateDevEnum) ptr=0x1ed6fcb4300 at 1ed6de8f450>
+2025-11-08 14:16:07,989 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICaptureGraphBuilder2) ptr=0x1ed6fdae7c8 at 1ed6de8fb50>
+2025-11-08 14:16:07,991 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfileManager2) ptr=0x1ed6fd7d2d0 at 1ed6de8f5d0>
+2025-11-08 14:16:07,992 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5f8b0 at 1ed6eebc1d0>
+2025-11-08 14:16:07,992 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5cd90 at 1ed6eebc3d0>
+2025-11-08 14:16:07,992 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5c940 at 1ed6eebc350>
+2025-11-08 14:16:07,993 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd61290 at 1ed65f8c0d0>
+2025-11-08 14:16:07,993 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5e320 at 1ed6de8f2d0>
+2025-11-08 14:16:07,993 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd609f0 at 1ed6de8e950>
+2025-11-08 14:16:07,993 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5c4f0 at 1ed6de8edd0>
+2025-11-08 14:16:07,993 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5ded0 at 1ed6de8f850>
+2025-11-08 14:16:07,994 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5ebc0 at 1ed6de8f7d0>
+2025-11-08 14:16:07,994 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5e770 at 1ed6de8f1d0>
+2025-11-08 14:16:07,994 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5bc50 at 1ed6de8f350>
+2025-11-08 14:16:07,995 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5f460 at 1ed6de8efd0>
+2025-11-08 14:16:07,995 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5c0a0 at 1ed6de8ef50>
+2025-11-08 14:16:07,995 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd60e40 at 1ed6de8ee50>
+2025-11-08 14:16:07,995 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd62c70 at 1ed6de8f050>
+2025-11-08 14:16:07,996 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd616e0 at 1ed6de8f250>
+2025-11-08 14:16:07,996 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd62820 at 1ed6de8fcd0>
+2025-11-08 14:16:07,997 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd61f80 at 1ed6de8f0d0>
+2025-11-08 14:16:07,997 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd61b30 at 1ed6de8f150>
+2025-11-08 14:16:07,997 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5da80 at 1ed6de8ff50>
+2025-11-08 14:16:07,998 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd5b800 at 1ed6de8fed0>
+2025-11-08 14:16:07,999 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd630c0 at 1ed6de8fe50>
+2025-11-08 14:16:07,999 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd605a0 at 1ed6de8fdd0>
+2025-11-08 14:16:07,999 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd623d0 at 1ed6de8fd50>
+2025-11-08 14:16:08,000 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c020 at 1ed6de8fc50>
+2025-11-08 14:16:08,000 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1bbd0 at 1ed6de8fbd0>
+2025-11-08 14:16:08,001 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c470 at 1ed6de8f750>
+2025-11-08 14:16:08,002 - __main__ - INFO - load_devices:350 - Found 3 cameras: ['Integrated Camera', 'USB 2.0 PC Cam', 'OBS Virtual Camera']
+2025-11-08 14:16:08,004 - __main__ - INFO - show_page:1185 - Showing page: CameraSelectionPage
+2025-11-08 14:16:10,429 - __main__ - INFO - show_page:1185 - Showing page: HomePage
+2025-11-08 14:18:32,132 - __main__ - INFO - show_page:1185 - Showing page: DatabasePage
+2025-11-08 14:18:39,998 - __main__ - INFO - show_page:1185 - Showing page: HomePage
+2025-11-08 14:18:41,884 - __main__ - INFO - _start_analysis:243 - User started analysis workflow
+2025-11-08 14:18:41,886 - __main__ - INFO - load_devices:319 - Loading camera devices...
+2025-11-08 14:18:41,886 - comtypes.client._create - DEBUG - CreateObject:88 - {E436EBB3-524F-11CE-9F53-0020AF0BA770} -> {E436EBB3-524F-11CE-9F53-0020AF0BA770}
+2025-11-08 14:18:41,886 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({E436EBB3-524F-11CE-9F53-0020AF0BA770}, clsctx=None, interface=<class 'comtypes.gen._78530B68_61F9_11D2_8CAD_00A024580902_0_1_0.IFilterGraph'>)
+2025-11-08 14:18:41,893 - comtypes.client._create - DEBUG - CreateObject:88 - {BF87B6E1-8C27-11d0-B3F0-00AA003761C5} -> {BF87B6E1-8C27-11D0-B3F0-00AA003761C5}
+2025-11-08 14:18:41,893 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({BF87B6E1-8C27-11D0-B3F0-00AA003761C5}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICaptureGraphBuilder2'>)
+2025-11-08 14:18:41,894 - comtypes.client._create - DEBUG - CreateObject:88 - {62BE5D10-60EB-11d0-BD3B-00A0C911CE86} -> {62BE5D10-60EB-11D0-BD3B-00A0C911CE86}
+2025-11-08 14:18:41,894 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({62BE5D10-60EB-11D0-BD3B-00A0C911CE86}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICreateDevEnum'>)
+2025-11-08 14:18:42,109 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd45f08 at 1ed6eebc4d0>
+2025-11-08 14:18:42,112 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd45f08 at 1ed6eebc050>
+2025-11-08 14:18:42,113 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd45f00 at 1ed6eebc3d0>
+2025-11-08 14:18:42,114 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd46288 at 1ed6eebc3d0>
+2025-11-08 14:18:42,115 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd46288 at 1ed6eebc050>
+2025-11-08 14:18:42,116 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd46280 at 1ed65f8c0d0>
+2025-11-08 14:18:42,116 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd45d48 at 1ed65f8c0d0>
+2025-11-08 14:18:42,117 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd45d48 at 1ed6eebc3d0>
+2025-11-08 14:18:42,119 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd45d40 at 1ed6eebc050>
+2025-11-08 14:18:42,121 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IEnumMoniker) ptr=0x1ed6fd574f0 at 1ed6eebc1d0>
+2025-11-08 14:18:42,134 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IFilterGraph) ptr=0x1ed6fcb6b50 at 1ed6de8fbd0>
+2025-11-08 14:18:42,135 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IGraphBuilder) ptr=0x1ed6fcb6b50 at 1ed6de8f750>
+2025-11-08 14:18:42,136 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaControl) ptr=0x1ed6fd3a868 at 1ed6de8fc50>
+2025-11-08 14:18:42,137 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaEvent) ptr=0x1ed6fd3a8a0 at 1ed6de8fd50>
+2025-11-08 14:18:42,137 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICreateDevEnum) ptr=0x1ed6fcb4420 at 1ed6de8fed0>
+2025-11-08 14:18:42,142 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICaptureGraphBuilder2) ptr=0x1ed6fd08058 at 1ed6de8fe50>
+2025-11-08 14:18:42,146 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfileManager2) ptr=0x1ed6fd418e0 at 1ed6de8fdd0>
+2025-11-08 14:18:42,147 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd964d0 at 1ed6eebc350>
+2025-11-08 14:18:42,148 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9ae20 at 1ed6eebc150>
+2025-11-08 14:18:42,149 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd97610 at 1ed6eebc550>
+2025-11-08 14:18:42,149 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9a130 at 1ed6de8f6d0>
+2025-11-08 14:18:42,150 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd98ba0 at 1ed6de8f950>
+2025-11-08 14:18:42,151 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9a9d0 at 1ed6de8eed0>
+2025-11-08 14:18:42,152 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd96080 at 1ed6de8eb50>
+2025-11-08 14:18:42,153 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd96920 at 1ed6de8f450>
+2025-11-08 14:18:42,153 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd9bb10 at 1ed6de8f650>
+2025-11-08 14:18:42,154 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd96d70 at 1ed6de8f350>
+2025-11-08 14:18:42,155 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd86790 at 1ed6de8fb50>
+2025-11-08 14:18:42,156 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd84db0 at 1ed6de8f5d0>
+2025-11-08 14:18:42,158 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd84960 at 1ed6de8f2d0>
+2025-11-08 14:18:42,160 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd819f0 at 1ed6de8e950>
+2025-11-08 14:18:42,160 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd86340 at 1ed6de8edd0>
+2025-11-08 14:18:42,161 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd85aa0 at 1ed6de8f850>
+2025-11-08 14:18:42,162 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd85650 at 1ed6de8f7d0>
+2025-11-08 14:18:42,163 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd840c0 at 1ed6de8f1d0>
+2025-11-08 14:18:42,164 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd82f80 at 1ed6de8efd0>
+2025-11-08 14:18:42,164 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd808b0 at 1ed6de8ef50>
+2025-11-08 14:18:42,165 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd80010 at 1ed6de8ee50>
+2025-11-08 14:18:42,166 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd7f770 at 1ed6de8f050>
+2025-11-08 14:18:42,166 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd7f320 at 1ed6de8f250>
+2025-11-08 14:18:42,167 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd82b30 at 1ed6de8fcd0>
+2025-11-08 14:18:42,168 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd85ef0 at 1ed6de8f0d0>
+2025-11-08 14:18:42,169 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd82290 at 1ed6de8f150>
+2025-11-08 14:18:42,170 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd81150 at 1ed6de8ff50>
+2025-11-08 14:18:42,171 - __main__ - INFO - load_devices:350 - Found 3 cameras: ['Integrated Camera', 'USB 2.0 PC Cam', 'OBS Virtual Camera']
+2025-11-08 14:18:42,177 - __main__ - INFO - show_page:1185 - Showing page: CameraSelectionPage
+2025-11-08 14:18:44,156 - __main__ - INFO - use_selected:391 - User selected camera: USB 2.0 PC Cam
+2025-11-08 14:18:44,158 - __main__ - INFO - start_camera:490 - Starting camera: USB 2.0 PC Cam (index 1)
+2025-11-08 14:18:44,160 - __main__ - INFO - _camera_worker:538 - Camera worker started for index 1
+2025-11-08 14:18:44,178 - __main__ - INFO - show_page:1185 - Showing page: CapturePage
+2025-11-08 14:18:44,466 - __main__ - INFO - _camera_worker:549 - Opening camera attempt 1/3...
+2025-11-08 14:18:46,039 - __main__ - INFO - _camera_worker:564 - ✅ Camera 1 opened successfully
+2025-11-08 14:18:46,641 - __main__ - INFO - _camera_worker:588 - Camera configured: 1920x1080
+2025-11-08 14:18:46,647 - __main__ - INFO - _camera_worker:603 - Camera streaming started
+2025-11-08 14:18:46,647 - __main__ - INFO - _on_camera_ready:694 - Camera ready for capture
+2025-11-08 14:18:52,377 - __main__ - INFO - stop_camera:510 - Stopping camera...
+2025-11-08 14:18:52,427 - __main__ - INFO - _camera_worker:664 - Camera worker finished (captured 29 frames)
+2025-11-08 14:18:52,429 - __main__ - INFO - _camera_worker:673 - Cleaning up camera resources...
+2025-11-08 14:18:53,041 - __main__ - INFO - _camera_worker:685 - Camera worker cleanup complete
+2025-11-08 14:18:53,045 - __main__ - INFO - stop_camera:534 - Camera stopped successfully
+2025-11-08 14:18:53,150 - __main__ - INFO - load_devices:319 - Loading camera devices...
+2025-11-08 14:18:53,155 - comtypes.client._create - DEBUG - CreateObject:88 - {E436EBB3-524F-11CE-9F53-0020AF0BA770} -> {E436EBB3-524F-11CE-9F53-0020AF0BA770}
+2025-11-08 14:18:53,155 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({E436EBB3-524F-11CE-9F53-0020AF0BA770}, clsctx=None, interface=<class 'comtypes.gen._78530B68_61F9_11D2_8CAD_00A024580902_0_1_0.IFilterGraph'>)
+2025-11-08 14:18:53,162 - comtypes.client._create - DEBUG - CreateObject:88 - {BF87B6E1-8C27-11d0-B3F0-00AA003761C5} -> {BF87B6E1-8C27-11D0-B3F0-00AA003761C5}
+2025-11-08 14:18:53,163 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({BF87B6E1-8C27-11D0-B3F0-00AA003761C5}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICaptureGraphBuilder2'>)
+2025-11-08 14:18:53,164 - comtypes.client._create - DEBUG - CreateObject:88 - {62BE5D10-60EB-11d0-BD3B-00A0C911CE86} -> {62BE5D10-60EB-11D0-BD3B-00A0C911CE86}
+2025-11-08 14:18:53,164 - comtypes.client._create - DEBUG - CreateObject:96 - CoCreateInstance({62BE5D10-60EB-11D0-BD3B-00A0C911CE86}, clsctx=None, interface=<class 'pygrabber.dshow_core.ICreateDevEnum'>)
+2025-11-08 14:18:53,382 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd46218 at 1ed6eebc3d0>
+2025-11-08 14:18:53,383 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd46218 at 1ed6eebc4d0>
+2025-11-08 14:18:53,384 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd46210 at 1ed6eebc350>
+2025-11-08 14:18:53,384 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd45e28 at 1ed6eebc350>
+2025-11-08 14:18:53,385 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd45e28 at 1ed6eebc4d0>
+2025-11-08 14:18:53,385 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd45e20 at 1ed65ef73d0>
+2025-11-08 14:18:53,386 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IUnknown) ptr=0x1ed6fd46288 at 1ed65ef73d0>
+2025-11-08 14:18:53,386 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IPropertyBag) ptr=0x1ed6fd46288 at 1ed6eebc350>
+2025-11-08 14:18:53,386 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMoniker) ptr=0x1ed6fd46280 at 1ed6eebc4d0>
+2025-11-08 14:18:53,387 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IEnumMoniker) ptr=0x1ed6fd48e50 at 1ed6eebc1d0>
+2025-11-08 14:18:53,387 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IFilterGraph) ptr=0x1ed6fcb6b50 at 1ed6de8fad0>
+2025-11-08 14:18:53,388 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IGraphBuilder) ptr=0x1ed6fcb6b50 at 1ed6de8f3d0>
+2025-11-08 14:18:53,388 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaControl) ptr=0x1ed6fd4e698 at 1ed6de8f150>
+2025-11-08 14:18:53,388 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IMediaEvent) ptr=0x1ed6fd4e6d0 at 1ed6de8f9d0>
+2025-11-08 14:18:53,389 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICreateDevEnum) ptr=0x1ed6fcb4540 at 1ed6de8f250>
+2025-11-08 14:18:53,389 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(ICaptureGraphBuilder2) ptr=0x1ed6fd07c58 at 1ed6de8efd0>
+2025-11-08 14:18:53,391 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfileManager2) ptr=0x1ed6fd4d410 at 1ed6de8f4d0>
+2025-11-08 14:18:53,392 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1d160 at 1ed6eebc150>
+2025-11-08 14:18:53,392 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1ef90 at 1ed6eebc550>
+2025-11-08 14:18:53,393 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c470 at 1ed6eebc250>
+2025-11-08 14:18:53,393 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1aa90 at 1ed6eebc2d0>
+2025-11-08 14:18:53,394 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1e2a0 at 1ed65f8c0d0>
+2025-11-08 14:18:53,394 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1b330 at 1ed6de8fbd0>
+2025-11-08 14:18:53,395 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd22350 at 1ed6de8f750>
+2025-11-08 14:18:53,395 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1fc80 at 1ed6de8fc50>
+2025-11-08 14:18:53,395 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1cd10 at 1ed6de8fed0>
+2025-11-08 14:18:53,396 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd21ab0 at 1ed6de8f650>
+2025-11-08 14:18:53,396 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd21660 at 1ed6de8fd50>
+2025-11-08 14:18:53,397 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1da00 at 1ed6de8fe50>
+2025-11-08 14:18:53,397 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd20dc0 at 1ed6de8fdd0>
+2025-11-08 14:18:53,398 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1f830 at 1ed6de8f6d0>
+2025-11-08 14:18:53,398 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1eb40 at 1ed6de8f950>
+2025-11-08 14:18:53,399 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1e6f0 at 1ed6de8eed0>
+2025-11-08 14:18:53,399 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd20970 at 1ed6de8eb50>
+2025-11-08 14:18:53,400 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1c8c0 at 1ed6de8f450>
+2025-11-08 14:18:53,400 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd20520 at 1ed6de8f350>
+2025-11-08 14:18:53,402 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd21f00 at 1ed6de8fb50>
+2025-11-08 14:18:53,402 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd21210 at 1ed6de8f5d0>
+2025-11-08 14:18:53,403 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd200d0 at 1ed6de8f2d0>
+2025-11-08 14:18:53,403 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1de50 at 1ed6de8e950>
+2025-11-08 14:18:53,404 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd1d5b0 at 1ed6de8edd0>
+2025-11-08 14:18:53,404 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd86790 at 1ed6de8f850>
+2025-11-08 14:18:53,405 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd86340 at 1ed6de8f7d0>
+2025-11-08 14:18:53,405 - comtypes._post_coinit.unknwn - DEBUG - __del__:287 - Release <POINTER(IWMProfile) ptr=0x1ed6fd84510 at 1ed6de8f1d0>
+2025-11-08 14:18:53,406 - __main__ - INFO - load_devices:350 - Found 3 cameras: ['Integrated Camera', 'USB 2.0 PC Cam', 'OBS Virtual Camera']
+2025-11-08 14:18:53,407 - __main__ - INFO - show_page:1185 - Showing page: CameraSelectionPage
+2025-11-08 14:18:57,284 - __main__ - INFO - use_selected:391 - User selected camera: Integrated Camera
+2025-11-08 14:18:57,286 - __main__ - INFO - start_camera:490 - Starting camera: Integrated Camera (index 0)
+2025-11-08 14:18:57,289 - __main__ - INFO - _camera_worker:538 - Camera worker started for index 0
+2025-11-08 14:18:57,306 - __main__ - INFO - show_page:1185 - Showing page: CapturePage
+2025-11-08 14:18:57,603 - __main__ - INFO - _camera_worker:549 - Opening camera attempt 1/3...
+2025-11-08 14:18:58,452 - __main__ - INFO - _camera_worker:564 - ✅ Camera 0 opened successfully
+2025-11-08 14:18:59,403 - __main__ - INFO - _camera_worker:588 - Camera configured: 1920x1080
+2025-11-08 14:18:59,418 - __main__ - INFO - _camera_worker:603 - Camera streaming started
+2025-11-08 14:18:59,420 - __main__ - INFO - _on_camera_ready:694 - Camera ready for capture
