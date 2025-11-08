@@ -846,13 +846,18 @@ class CapturePage(BasePage):
             rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             img = Image.fromarray(rgb)
             
-            preview_width, preview_height = config["ui"]["preview_size"]
+            # Use current preview size (can be fullscreen or normal)
+            preview_width, preview_height = config["ui"].get("current_preview_size", config["ui"]["preview_size"])
             img = img.resize((preview_width, preview_height), Image.Resampling.LANCZOS)
             
             img_tk = ImageTk.PhotoImage(img)
             
             # Update label
-            self.preview_label.configure(image=img_tk, text="")
+            self.preview_label.configure(
+                image=img_tk, 
+                text="",
+                bg="black"  # Black background for better contrast
+            )
             self.preview_label.image = img_tk
             
         except Exception as e:
