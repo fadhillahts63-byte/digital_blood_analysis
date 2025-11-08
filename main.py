@@ -421,55 +421,133 @@ class CapturePage(BasePage):
         
         # UI state
         self.is_capturing = False
+        self.is_fullscreen = False
         
         self._build_ui()
     
     def _build_ui(self):
         """Build UI components."""
+        # Header
+        header_frame = ttk.Frame(self)
+        header_frame.pack(pady=10, fill="x")
+        
         ttk.Label(
-            self,
+            header_frame,
             text="📷 Live Preview Mikroskop",
             font=("Arial", 16, "bold")
-        ).pack(pady=10)
+        ).pack()
         
-        # Preview area
-        preview_frame = ttk.Frame(self, relief="sunken", borderwidth=2)
-        preview_frame.pack(pady=10)
+        # Device info label
+        self.device_info_label = ttk.Label(
+            header_frame,
+            text="",
+            font=("Arial", 9),
+            foreground="gray"
+        )
+        self.device_info_label.pack()
+        
+        # Preview area dengan frame
+        preview_container = ttk.Frame(self, relief="solid", borderwidth=2)
+        preview_container.pack(pady=10, padx=10, expand=True, fill="both")
+        
+        preview_width, preview_height = config["ui"]["preview_size"]
         
         self.preview_label = Label(
-            preview_frame,
-            text="(Mengaktifkan kamera...)",
-            bg="#f0f0f0",
-            width=80,
-            height=30
+            preview_container,
+            text="⏳ Mengaktifkan kamera...\n\nMohon tunggu sebentar",
+            bg="#2c3e50",
+            fg="white",
+            font=("Arial", 12),
+            width=int(preview_width/10),  # Approximate character width
+            height=int(preview_height/20)  # Approximate character height
         )
-        self.preview_label.pack(padx=5, pady=5)
+        self.preview_label.pack(padx=5, pady=5, expand=True)
         
-        # Controls
-        btn_frame = ttk.Frame(self)
-        btn_frame.pack(pady=10)
+        # Controls frame
+        controls_frame = ttk.Frame(self)
+        controls_frame.pack(pady=10)
+        
+        # Main buttons
+        btn_frame = ttk.Frame(controls_frame)
+        btn_frame.pack()
         
         self.capture_btn = ttk.Button(
             btn_frame,
-            text="📸 Ambil Gambar",
+            text="📸 Ambil Gambar (Space)",
             command=self.capture_frame,
-            state="disabled"
+            state="disabled",
+            width=25
         )
         self.capture_btn.grid(row=0, column=0, padx=5)
         
+        self.fullscreen_btn = ttk.Button(
+            btn_frame,
+            text="⛶ Fullscreen (F)",
+            command=self.toggle_fullscreen,
+            state="disabled",
+            width=20
+        )
+        self.fullscreen_btn.grid(row=0, column=1, padx=5)
+        
         ttk.Button(
             btn_frame,
-            text="⬅️ Kembali",
-            command=self._go_back
-        ).grid(row=0, column=1, padx=5)
+            text="⬅️ Kembali (Esc)",
+            command=self._go_back,
+            width=20
+        ).grid(row=0, column=2, padx=5)
         
-        # Status
+        # Status frame with progress
+        status_frame = ttk.Frame(self)
+        status_frame.pack(pady=5, fill="x", padx=20)
+        
         self.status_label = ttk.Label(
-            self,
-            text="Status: Memuat kamera...",
-            font=("Arial", 10)
+            status_frame,
+            text="⏳ Status: Memuat kamera...",
+            font=("Arial", 10),
+            foreground="blue"
         )
-        self.status_label.pack(pady=5)
+        self.status_label.pack()
+        
+        # Progress bar (hidden by default)
+        self.progress_bar = ttk.Progressbar(
+            status_frame,
+            mode='indeterminate',
+            length=300
+        )
+        
+        # Tips label
+        tips_frame = ttk.Frame(self)
+        tips_frame.pack(pady=5)
+        
+        ttk.Label(
+            tips_frame,
+            text="💡 Tips: Gunakan Space untuk capture, F untuk fullscreen, Esc untuk kembali",
+            font=("Arial", 8),
+            foreground="gray"
+        ).pack()
+        
+        # Bind keyboard shortcuts
+        self.bind_all('<space>', lambda e: self.capture_frame() if self.capture_btn['state'] == 'normal' else None)
+        self.bind_all('<f>', lambda e: self.toggle_fullscreen() if self.fullscreen_btn['state'] == 'normal' else None)
+        self.bind_all('<F>', lambda e: self.toggle_fullscreen() if self.fullscreen_btn['state'] == 'normal' else None)
+        self.bind_all('<Escape>', lambda e: self._go_back())
+    
+    def toggle_fullscreen(self):
+        """Toggle fullscreen mode for preview."""
+        self.is_fullscreen = not self.is_fullscreen
+        
+        if self.is_fullscreen:
+            preview_width = int(config["ui"]["window_size"][0] * 0.9)
+            preview_height = int(config["ui"]["window_size"][1] * 0.85)
+            self.fullscreen_btn.config(text="⛶ Normal View (F)")
+        else:
+            preview_width, preview_height = config["ui"]["preview_size"]
+            self.fullscreen_btn.config(text="⛶ Fullscreen (F)")
+        
+        # Store new size in config temporarily
+        config["ui"]["current_preview_size"] = [preview_width, preview_height]
+        
+        logger.info(f"Preview mode changed: fullscreen={self.is_fullscreen}, size={preview_width}x{preview_height}")
     
     def on_show(self):
         """Start camera when page is shown."""
