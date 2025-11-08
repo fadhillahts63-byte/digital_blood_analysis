@@ -887,10 +887,11 @@ class CapturePage(BasePage):
         """Offer recovery options to user."""
         response = messagebox.askyesnocancel(
             "Kamera Error",
-            "Kamera gagal dimulai."
-            "• Klik 'Yes' untuk mencoba kamera lain"
-            "• Klik 'No' untuk kembali ke menu utama"
-            "• Klik 'Cancel' untuk retry kamera ini"
+            f"Kamera gagal dimulai.\n\n"
+            f"Opsi pemulihan:\n"
+            f"• Klik 'Yes' untuk mencoba kamera lain\n"
+            f"• Klik 'No' untuk kembali ke menu utama\n"
+            f"• Klik 'Cancel' untuk retry kamera ini"
         )
         
         if response is True:  # Yes
